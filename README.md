@@ -1,6 +1,5 @@
-# Go Example Project
-This project is an example Go web application for anyone wanting to build a Go web application fast.
-This project is technically production ready and is mostly optimized, though I would recommend you just use this project as the basic framework for a more advanced Go web application. 
+# Example bed and breakfast booking website
+This project is an example bed and breakfast booking website created using Go.
 
 Project package details 
 - [chi](https://github.com/go-chi/chi) is used for the router
