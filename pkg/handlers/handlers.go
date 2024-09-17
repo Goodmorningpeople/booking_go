@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/Goodmorningpeople/go_web_example/pkg/config"
-	"github.com/Goodmorningpeople/go_web_example/pkg/models"
-	"github.com/Goodmorningpeople/go_web_example/pkg/render"
+	"github.com/Goodmorningpeople/booking_go/pkg/config"
+	"github.com/Goodmorningpeople/booking_go/pkg/models"
+	"github.com/Goodmorningpeople/booking_go/pkg/render"
 )
 
 // repository pattern (very, very cool)
@@ -27,20 +27,29 @@ func NewHandler(r *Respository) {
 
 // handler funcs that handle the rendered templates and write them to a server with oppotional logic passed to template (response writer w is passed when used in HandleFunc() for this)
 func (m *Respository) Home(w http.ResponseWriter, r *http.Request) {
-	remoteIp := r.RemoteAddr
-
-	m.App.Session.Put(r.Context(), "remote_ip", remoteIp)
 	render.RenderTemplate(w, "home.page.html", &models.TemplateData{})
 }
 
 func (m *Respository) About(w http.ResponseWriter, r *http.Request) {
-	remoteIp := m.App.Session.GetString(r.Context(), "remote_ip")
-	stringMap := map[string]string{
-		"explanation": "Go is a really robust language for both systems programming (like rust but better) and web programming (arguably like javascript but better).", 
-		"remote_ip": remoteIp,
-	}
+	render.RenderTemplate(w, "about.page.html", &models.TemplateData{})
+}	
 
-	render.RenderTemplate(w, "about.page.html", &models.TemplateData{
-		StringMap: stringMap,
-	})
+func (m *Respository) GeneralQuarters(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "generalsquarters.page.html", &models.TemplateData{})
+}	
+
+func (m *Respository) MajorSuite(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "majorsuite.page.html", &models.TemplateData{})
+}	
+
+func (m *Respository) Contact(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "contact.page.html", &models.TemplateData{})
+}	
+
+func (m *Respository) Booking(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "book.page.html", &models.TemplateData{})
+}	
+
+func (m *Respository) Reservation(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "reservation.page.html", &models.TemplateData{})
 }	

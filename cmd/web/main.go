@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Goodmorningpeople/go_web_example/pkg/config"
-	"github.com/Goodmorningpeople/go_web_example/pkg/handlers"
-	"github.com/Goodmorningpeople/go_web_example/pkg/render"
+	"github.com/Goodmorningpeople/booking_go/pkg/config"
+	"github.com/Goodmorningpeople/booking_go/pkg/handlers"
+	"github.com/Goodmorningpeople/booking_go/pkg/render"
 	"github.com/alexedwards/scs/v2"
 )
 

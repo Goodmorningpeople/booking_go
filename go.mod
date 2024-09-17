@@ -1,4 +1,4 @@
-module github.com/Goodmorningpeople/go_web_example
+module github.com/Goodmorningpeople/booking_go
 
 go 1.23.0
 

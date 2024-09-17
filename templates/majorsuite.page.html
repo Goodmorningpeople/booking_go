@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Major's suite page</title>
+        <link rel="stylesheet" href="/static/css/output.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <!--Navbar-->
+            <div class="navbar bg-black fixed top-0 w-full shadow-md z-50">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16"
+                                />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a>Item 1</a>
+                            </li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li>
+                                        <a>Submenu 1</a>
+                                    </li>
+                                    <li>
+                                        <a>Submenu 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Item 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="font-comfortaa text-primary text-2xl">Fort Smythe B&B</div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li>
+                            <a class="font-comfortaa text-gray-400 hover:text-white" href="/">Home</a>
+                        </li>
+                        <li>
+                            <a class="font-comfortaa text-gray-400 hover:text-white" href="/about">About</a>
+                        </li>
+                        <li>
+                            <details>
+                                <summary class="font-comfortaa text-gray-400 hover:text-white">Rooms</summary>
+                                <ul class="p-2">
+                                    <li>
+                                        <a class="font-comfortaa text-gray-400 hover:text-white" href="/generalsquarters">General's quarters</a>
+                                    </li>
+                                    <li>
+                                        <a class="font-comfortaa text-white">Major Suite</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <a class="font-comfortaa text-gray-400 hover:text-white" href="/booking">Book now</a>
+                        </li>
+                        <li>
+                            <a class="font-comfortaa text-gray-400 hover:text-white" href="/contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex space-x-4">
+                        <a href="https://twitter.com" target="_blank" class="text-blue-600">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="text-pink-600">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://whatsapp.com" target="_blank" class="text-green-600">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="text-blue-600">
+                            <i class="fab fa-facebook fa-2x relative right-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="flex flex-row justify-start mt-28">
+                <img
+                    src="/static/images/majorsuite.jpg"
+                    alt="General's quarters"
+                    height="1000px"
+                    width="750px"
+                >
+                <div class="text-center font-opensans text-white w-7/12 ml-4">
+                    <div class="text-orange-500 text-2xl inline">The Major's suite</div>, an epitome of timeless elegance, welcomes guests into a realm of classic luxury and comfort. The room features deep burgundy and soft gold tones that create a sophisticated atmosphere, with walls adorned in intricate damask wallpaper. At the center is a grand four-poster bed draped in sumptuous linens, flanked by antique nightstands with ornate lamps casting a warm, inviting glow. High ceilings and tall windows, dressed in flowing drapes, enhance the sense of space and openness while allowing natural light to highlight the room’s exquisite details.
+                    <br>
+                    <br>
+                    <div class="text-primary text-2xl inline">A plush sitting area</div>, thoughtfully arranged near the window, includes elegant wingback chairs and a vintage writing desk. This cozy nook is perfect for reading or relaxing, offering a lovely view of the surrounding gardens. A stately fireplace with an intricately carved mantel adds charm and warmth, creating a comforting ambiance for guests to unwind.
+                    <br>
+                    <br>
+                    <div class="text-primary text-2xl inline">The en-suite bathroom</div>
+                    , a luxurious retreat, features a deep clawfoot tub against marble tiles and polished brass fixtures. The spacious shower area, equipped with a rainfall showerhead, promises a rejuvenating experience. Fluffy bathrobes and plush towels add to the indulgence, making the Major’s Suite not just a room but a personal sanctuary designed for an unforgettable stay.
+                </div>
+            </div>
+            <div class="flex flex-row justify-center">
+                <a class="btn mt-16 text-3xl text-orange-500" href="/reservation">Make reservation now</a>
+            </div>
+        </main>
+        <!--Footer-->
+        <footer class="mt-16 footer footer-center p-1 bg-primary text-primary-content">
+            <div>
+                <p class="font-bold">
+                    ACME Industries Ltd.
+                    <br>
+                    Creating dynamic websites since 1992
+                </p>
+                <p>Copyright © 2023 - All right reserved</p>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>

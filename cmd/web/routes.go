@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/Goodmorningpeople/go_web_example/pkg/config"
-	"github.com/Goodmorningpeople/go_web_example/pkg/handlers"
+	"github.com/Goodmorningpeople/booking_go/pkg/config"
+	"github.com/Goodmorningpeople/booking_go/pkg/handlers"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )
@@ -21,5 +21,10 @@ func routes(app *config.AppConfig) http.Handler {
 	mux.Handle("/static/*", http.StripPrefix("/static", fileServer))
 	mux.Get("/", handlers.Repo.Home)
 	mux.Get("/about", handlers.Repo.About)
+	mux.Get("/generalsquarters", handlers.Repo.GeneralQuarters)
+	mux.Get("/majorsuite", handlers.Repo.MajorSuite)
+	mux.Get("/contact", handlers.Repo.Contact)
+	mux.Get("/booking", handlers.Repo.Booking)
+	mux.Get("/reservation", handlers.Repo.Reservation)
 	return mux
 }

@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/Goodmorningpeople/go_web_example/pkg/config"
-	"github.com/Goodmorningpeople/go_web_example/pkg/models"
+	"github.com/Goodmorningpeople/booking_go/pkg/config"
+	"github.com/Goodmorningpeople/booking_go/pkg/models"
 )
 
 var app *config.AppConfig
